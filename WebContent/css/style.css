@@ -158,3 +158,8 @@ table#report_list .report_litle {
 table#report_list .report_action {
 	width: 13%;
 }
+
+
+pre {
+	ont-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+}
