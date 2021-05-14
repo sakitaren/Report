@@ -1,8 +1,19 @@
 @CHARSET "UTF-8";
 
 body {
-    color: #333333;
-    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+    background-color: #FFFDE7;
+	background-size: 80px 80px;
+	background-image:
+	 linear-gradient(rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(90deg, rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%),
+	 linear-gradient(90deg, transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%);
 }
 
 #header {
@@ -15,6 +26,7 @@ body {
     width: 94%;
     margin-top: 15px;
     padding-left: 3%;
+    color: skyblue;
 }
 
 h1 {
@@ -25,6 +37,7 @@ h1 {
 h2 {
     font-size: 36px;
     margin-bottom: 15px;
+    color: skyblue;
 }
 
 li {
@@ -39,21 +52,24 @@ p {
 
 a {
     text-decoration: none;
-    color: #24738e;
+    color: #00FFFF;
 }
 
 table, tr, th, td {
-    border: 1px solid #cccccc;
+    border: solid 1px black;
 }
 
 table {
     width: 100%;
     table-layout: fixed;
+    color: skyblue;
+    text-align: center;
 }
 
 th {
     width: 26%;
     padding: 10px 2%;
+    text-align: center;
 }
 
 td {
@@ -62,12 +78,32 @@ td {
 }
 
 button {
-    font-size: 14px;
-    padding: 5px 10px;
+  font-size: 14px;
+  padding: 5px 10px;
+  color:#00FFFF;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #00BCD4;/*背景色*/
+  color: #00BCD4;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #118e9e;
+  border-radius: 4px;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+.btn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #00BCD4;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #footer {
     text-align: center;
+    color: skyblue;
 }
 
 #flush_success {
@@ -76,8 +112,8 @@ button {
     padding-left: 2%;
     padding-bottom: 28px;
     margin-bottom: 15px;
-    color: #155724;
-    background-color: #d4edda;
+    color: #000000;
+    background-color: #00FFFF;
 }
 
 #flush_error {
@@ -86,8 +122,8 @@ button {
 	padding-left: 2%;
 	padding-bottom: 28px;
 	margin-bottom: 15px;
-	color: #721c24;
-	background-color: #f8d7da;
+	color: #000000;
+	background-color: #00FFFF;
 }
 
 
@@ -98,12 +134,36 @@ table#employee_list th{
 
 
 tr.row1 {
-	    background-color: #f2f2f2;
+	background-color: #FFFDE7;
+	background-size: 80px 80px;
+	background-image:
+	 linear-gradient(rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(90deg, rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%),
+	 linear-gradient(90deg, transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%);
 }
 
 
 tr.row0 {
-	    background-color: #ffffff;
+	background-color: #FFFDE7;
+	background-size: 80px 80px;
+	background-image:
+	 linear-gradient(rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(90deg, rgba(215,204,200,.7) 1%, rgba(215,204,200,.7) 1%, transparent 1%,
+	  transparent 99%, rgba(215,204,200,.7) 99%, rgba(215,204,200,.7) 100%),
+	 linear-gradient(transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%),
+	 linear-gradient(90deg, transparent, transparent 25%, rgba(215,204,200,.4) 25%, rgba(215,204,200,.4) 26%, transparent 26%,
+	  transparent 50%, rgba(215,204,200,.4) 50%, rgba(215,204,200,.4) 51%, transparent 51%,
+	  transparent 75%, rgba(215,204,200,.4) 75%, rgba(215,204,200,.4) 76%, transparent 76%, transparent 100%);
 }
 
 select {
@@ -119,7 +179,7 @@ select {
 }
 
 #employee_name {
-    color: #cccccc;
+    color: #00FFFF;
     width: 36%;
     padding-right: 3%;
     text-align: right;
@@ -127,11 +187,11 @@ select {
 }
 
 #header a {
-    color: #eeeeee;
+    color: #00FFFF;
 }
 
 h1 a {
-    color: #eeeeee;
+    color: #00FFFF;
 }
 
 
@@ -167,4 +227,5 @@ pre {
 
 h3 {
     font-size: larger;
+    color: skyblue;
 }
