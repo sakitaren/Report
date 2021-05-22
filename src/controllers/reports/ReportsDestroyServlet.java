@@ -42,10 +42,12 @@ public class ReportsDestroyServlet extends HttpServlet {
             // 該当のIDのメッセージ1件のみをデータベースから取得
             Report r = em.find(Report.class, (Integer)(request.getSession().getAttribute("report_id")));
 
+
             em.getTransaction().begin();
-            em.remove(r);       // データ削除
+            em.remove(r);              //データ削除
             em.getTransaction().commit();
             em.close();
+            request.getSession().setAttribute("flush", "削除が完了しました。");
 
             // セッションスコープ上の不要になったデータを削除
             request.getSession().removeAttribute("report_id");
